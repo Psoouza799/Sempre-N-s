@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História de Amor</title>
+    <link rel="stylesheet" href="slides.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Partículas de fundo -->
+    <div class="particles-background">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Container principal -->
+    <div class="slides-container">
+        <!-- Header com navegação -->
+        <header class="slides-header">
+            <button class="back-button" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i>
+                <span>Voltar</span>
+            </button>
+            <h1 class="slides-title">Nossa História de Amor</h1>
+            <div class="slide-counter">
+                <span id="currentSlide">1</span> / <span id="totalSlides">12</span>
+            </div>
+        </header>
+
+        <!-- Swiper container -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                
+                <!-- Slide 1: Amor Incondicional -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="./images/1000403515.jpg" alt="Nosso Amor" class="slide-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h2 class="slide-heading">Amor Incondicional</h2>
+                            <p class="slide-text">
+                                "O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha. 
+                                Não maltrata, não procura seus interesses, não se ira facilmente, não guarda rancor. 
+                                O amor não se alegra com a injustiça, mas se alegra com a verdade. Tudo sofre, 
+                                tudo crê, tudo espera, tudo suporta."
+                            </p>
+                            <p class="bible-verse">1 Coríntios 13:4-7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Perseverança -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="./images/1000403543.jpg" alt="Nossa Jornada" class="slide-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h2 class="slide-heading">Perseverança em Cada Passo</h2>
+                            <p class="slide-text">
+                                Juntos enfrentamos tempestades e celebramos vitórias. Cada desafio nos fortaleceu, 
+                                cada obstáculo se tornou uma oportunidade de crescer lado a lado. Nossa jornada 
+                                não é apenas sobre os destinos que alcançamos, mas sobre como caminhamos juntos, 
+                                de mãos dadas, transformando cada dificuldade em uma nova razão para nos amarmos ainda mais.
+                            </p>
+                            <p class="bible-verse">"Tudo posso naquele que me fortalece" - Filipenses 4:13</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Gratidão -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="./images/1000403544.jpg" alt="Gratidão" class="slide-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-praying-hands"></i>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h2 class="slide-heading">Gratidão Infinita</h2>
+                            <p class="slide-text">
+                                Sou grato por cada manhã que acordo ao seu lado, por cada sorriso que ilumina meus dias, 
+                                por cada palavra de carinho que aquece meu coração. Você é o presente mais precioso que 
+                                a vida me deu, e a cada dia descubro novas razões para agradecer por ter você em minha vida. 
+                                Sua presença transforma o ordinário em extraordinário.
+                            </p>
+                            <p class="bible-verse">"Em tudo dai graças" - 1 Tessalonicenses 5:18</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Sonhos e Futuro -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="./images/1000403545.jpg" alt="Nossos Sonhos" class="slide-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h2 class="slide-heading">Sonhos Compartilhados</h2>
+                            <p class="slide-text">
+                                Nossos sonhos se entrelaçam como fios dourados tecendo o futuro que construiremos juntos. 
+                                Cada plano que fazemos, cada meta que estabelecemos, cada esperança que nutrimos - 
+                                tudo ganha mais sentido quando compartilhado com você. O futuro brilha mais intensamente 
+                                porque sei que estaremos lado a lado, transformando sonhos em realidade.
+                            </p>
+                            <p class="bible-verse">"Porque eu bem sei os pensamentos que tenho a vosso respeito" - Jeremias 29:11</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5: Superação -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="./images/1000403550.jpg" alt="Superação" class="slide-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h2 class="slide-heading">Força na Adversidade</h2>
+                            <p class="slide-text">
+                                Quando as tempestades da vida tentaram nos separar, descobrimos que nosso amor é mais forte 
+                                que qualquer vendaval. Cada desafio superado juntos nos tornou mais resilientes, mais unidos, 
+                                mais determinados. Aprendemos que não é a ausência de problemas que define um relacionamento forte, 
+                                mas a capacidade de enfrentá-los juntos, de mãos dadas e coração a coração.
+                            </p>
+                            <p class="bible-verse">"O cordão de três dobras não se quebra facilmente" - Eclesiastes 4:12</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6: Momentos Especiais -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="./images/1000403549.jpg" alt="Momentos Especiais" class="slide-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h2 class="slide-heading">Momentos Preciosos</h2>
+                            <p class="slide-text">
+                                Cada momento ao seu lado é uma página dourada no livro da nossa história. Desde os grandes 
+                                marcos até os pequenos gestos cotidianos, tudo se torna especial quando vivido com você. 
+                                Suas risadas ecoam em meu coração, seus abraços são meu porto seguro, e seus olhos são 
+                                o espelho onde vejo refletido todo o amor que sinto por você.
+                            </p>
+                            <p class="bible-verse">"Melhor é serem dois do que um" - Eclesiastes 4:9</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 7: Crescimento Mútuo -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="./images/1000403547.jpg" alt="Crescimento" class="slide-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h2 class="slide-heading">Crescendo Juntos</h2>
+                            <p class="slide-text">
+                                Como duas árvores que crescem lado a lado, nossos galhos se entrelaçam, nossas raízes se 
+                                fortalecem mutuamente. Você me inspira a ser uma versão melhor de mim mesmo a cada dia. 
+                                Juntos, florescemos em direção à luz, criando uma sombra acolhedora onde nosso amor pode 
+                                crescer e frutificar. Cada estação da vida nos encontra mais maduros, mais sábios, mais unidos.
+                            </p>
+                            <p class="bible-verse">"Como o ferro afia o ferro, assim o homem afia o seu amigo" - Provérbios 27:17</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 8: Fé e Espiritualidade -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="./images/1000403546.jpg" alt="Fé" class="slide-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-cross"></i>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h2 class="slide-heading">Unidos na Fé</h2>
+                            <p class="slide-text">
+                                Nossa fé é o alicerce sobre o qual construímos nosso amor. Juntos buscamos a sabedoria divina, 
+                                oramos um pelo outro, e encontramos em Deus a fonte de nossa força e união. Que nosso 
+                                relacionamento seja sempre um reflexo do amor de Cristo, cheio de graça, perdão e 
+                                compaixão. Na presença do Senhor, nosso amor se multiplica e se santifica.
+                            </p>
+                            <p class="bible-verse">"Onde dois ou três estiverem reunidos em meu nome, ali estou eu" - Mateus 18:20</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 9: Cumplicidade -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="./images/1000403551.jpg" alt="Cumplicidade" class="slide-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h2 class="slide-heading">Parceiros para Sempre</h2>
+                            <p class="slide-text">
+                                Somos mais que namorados, somos parceiros de vida, cúmplices de sonhos, confidentes de alma. 
+                                Em você encontro não apenas o amor romântico, mas também a amizade mais verdadeira, 
+                                a parceria mais sólida, a cumplicidade mais profunda. Juntos enfrentamos o mundo, 
+                                sabendo que sempre teremos um no outro o apoio incondicional e o amor inesgotável.
+                            </p>
+                            <p class="bible_verse">"Dois são melhores que um" - Eclesiastes 4:9</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 10: Eternidade do Amor -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="./images/1000403557.jpg" alt="Amor Eterno" class="slide-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-infinity"></i>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h2 class="slide-heading">Amor Sem Fim</h2>
+                            <p class="slide-text">
+                                Nosso amor transcende o tempo e o espaço. É um sentimento que não conhece limites, 
+                                que não se desgasta com os anos, que só cresce e se fortalece a cada dia que passa. 
+                                Mesmo quando formos velhinhos, mesmo quando nossos cabelos estiverem brancos, 
+                                nosso amor permanecerá jovem, vibrante, eterno. Porque o verdadeiro amor nunca envelhece, 
+                                nunca morre, nunca se apaga.
+                            </p>
+                            <p class="bible-verse">"Muitas águas não podem apagar o amor" - Cantares 8:7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 11: Renovação -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                            <img src="./images/1000403560.jpg" alt="Renovação" class="slide-image">
+                            <div class="image-overlay">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h2 class="slide-heading">Sempre Recomeçar</h2>
+                            <p class="slide-text">
+                                A cada amanhecer, nosso amor se renova como as misericórdias do Senhor. Cada dia é uma 
+                                nova oportunidade de amarmos mais profundamente, de nos conhecermos melhor, de construirmos 
+                                memórias ainda mais preciosas. Não importa quantos anos passem, sempre haverá algo novo 
+                                para descobrirmos um no outro, sempre haverá uma nova razão para nos apaixonarmos novamente.
+                            </p>
+                            <p class="bible-verse">"As misericórdias do Senhor se renovam a cada manhã" - Lamentações 3:23</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 12: Promessa Final -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="image-container">
+                      <img src="./images/1000403548.jpg" alt="Minha Promessa Eterna" class="slide-image">                            <div class="image-overlay">
+                                <i class="fas fa-ring"></i>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h2 class="slide-heading">Minha Promessa Eterna</h2>
+                            <p class="slide-text">
+                                Prometo amar você em todos os dias da minha vida, nos momentos de alegria e nos de tristeza, 
+                                na saúde e na doença, na riqueza e na pobreza. Prometo ser seu companheiro fiel, seu amigo 
+                                verdadeiro, seu amor incondicional. Prometo crescer ao seu lado, sonhar com você, 
+                                construir um futuro onde nosso amor seja o alicerce de tudo que somos e de tudo que seremos. 
+                                Você é meu presente, meu futuro, minha eternidade.
+                            </p>
+                            <p class="bible-verse">"Por isso deixará o homem pai e mãe e se unirá à sua mulher" - Gênesis 2:24</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navegação -->
+            <div class="swiper-button-next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+
+            <!-- Paginação -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Controles adicionais -->
+        <div class="controls">
+            <button class="control-btn" id="playPause">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="control-btn" id="fullscreen">
+                <i class="fas fa-expand"></i>
+            </button>
+            <button class="control-btn" id="share">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal de compartilhamento -->
+    <div class="share-modal" id="shareModal">
+        <div class="modal-content">
+            <h3>Compartilhar Nossa História</h3>
+            <p>Copie o link para compartilhar este momento especial:</p>
+            <div class="link-container">
+                <input type="text" id="shareLink" readonly>
+                <button onclick="copyLink()">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </div>
+            <button class="close-modal" onclick="closeShareModal()">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="slides.js"></script>
+</body>
+</html>
+
